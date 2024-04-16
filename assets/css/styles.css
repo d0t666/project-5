@@ -66,6 +66,13 @@ button {
     font-weight: 400;
     line-height: 1.66; /* 166.667% */
 }
+.section-heading {
+    color: #212832;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25; /* 125% */
+}
 /* header */
 .header {
     padding: 56px 0;
@@ -238,4 +245,68 @@ button {
     position: absolute;
     top: 127px;
     right: 0;
+}
+/* work */
+.work {
+    margin-top: 160px;
+}
+.work__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 130px;
+}
+.work__media {
+    position: relative;
+}
+.work__media-img {
+    position: relative;
+    width: 100%;
+    height: 619px;
+    z-index: 1;
+}
+.work__media::before {
+    content: url(../img/how-itwork_bg.png);
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+}
+.work__content {
+    max-width: 470px;
+    width: 100%;
+    flex-shrink: 0;
+}
+.work_list {
+    margin-top: 70px;
+}
+.work_item-tittle {
+    color: #212832;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.45; /* 145.455% */
+    margin-top: 30px;
+}
+.work_item-desc {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    margin-top: 16px;
+}
+.work__content-heading {
+    margin-top: 12px;
+}
+.work__media-icon {
+    position: absolute;
+    top: 76px;
+    right: 55px;
+}
+.work__media-card {
+    position: absolute;
+    bottom: 45px;
+    right: -155px;
+    z-index: 1;
 }
