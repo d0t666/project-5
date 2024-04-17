@@ -641,6 +641,7 @@ button {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 30px;
+    margin-top: 70px;
 }
 .blog-item {
     display: flex;
@@ -657,6 +658,9 @@ button {
 .blog-item:hover {
     cursor: pointer;
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+}
+.blog-item:hover .blog-item__viewmore {
+    color: #7264d6;
 }
 .blog-item__wrap {
     width: 100%;
@@ -687,7 +691,7 @@ button {
     margin-top: 10px;
 }
 .blog-item__viewmore {
-    color: #7264d6;
+    color: #696d76;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
@@ -747,4 +751,84 @@ button {
     display: grid;
     grid-template-columns: repeat(2, auto);
     column-gap: 16px;
+}
+/* footer */
+.footer {
+    margin-top: 100px;
+    padding: 100px 135px 0 135px;
+    background: #fafbff;
+}
+.footer_top {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+}
+.footer__heading {
+    color: #212832;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+    margin-bottom: 24px;
+}
+.footer_item {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    margin-bottom: 5px;
+}
+.footer_item:hover {
+    color: var(--primary-color);
+}
+.footer_item-address {
+    max-width: 371px;
+}
+.footer_email_form {
+    width: 270px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    display: flex;
+    column-gap: 20px;
+    outline: none;
+    border: none;
+}
+.footer_email_form-input {
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    padding: 12px;
+}
+.footer_email_form-btn {
+    background: #7264d6;
+    border: none;
+    cursor: pointer;
+}
+.footer_mid {
+    margin: 54px 0 28px 0;
+    display: flex;
+    column-gap: 100px;
+}
+.footer_mid-mail,
+.footer_mid-tel {
+    color: #6a6e78;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    text-decoration-line: underline;
+}
+.copyright {
+    background: #7264d6;
+
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
 }
