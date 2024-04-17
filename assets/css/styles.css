@@ -467,4 +467,34 @@ button {
     position: absolute;
     top: 47%;
     right: -49%;
+    z-index: 2;
+}
+.choose-payment {
+    position: absolute;
+    z-index: 1;
+    bottom: 57px;
+    right: -125px;
+    max-width: 281px;
+    max-height: 220px;
+    background: #fff;
+    filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+    padding: 28px;
+    border-radius: 12px;
+}
+.choose-payment__title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+.list_payment {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 20px;
+    gap: 18px;
+}
+.payment-item {
+    width: 63px;
+    height: 48px;
 }
