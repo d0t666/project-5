@@ -93,6 +93,8 @@ button {
 }
 .logo {
     margin-right: 70px;
+    width: 102.68px;
+    cursor: pointer;
 }
 .login {
     margin-right: 28px;
@@ -151,7 +153,19 @@ button {
     border: none;
     padding: 0 20px;
 }
-
+.form-err {
+    visibility: hidden;
+}
+.footer_email_form:has(:invalid:not(:placeholder-shown)) + .form-err,
+.email_form:has(:invalid:not(:placeholder-shown)) + .form-err {
+    color: red;
+    visibility: visible;
+}
+.footer_email_form:has(:invalid:not(:placeholder-shown)) .footer_email_form-btn,
+.email_form:has(:invalid:not(:placeholder-shown)) .email_form-btn {
+    opacity: 0.5;
+    pointer-events: none;
+}
 .hero__heading {
     margin: 12px 0 20px 0;
     color: #212832;

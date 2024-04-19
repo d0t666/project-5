@@ -97,7 +97,7 @@
         <header class="header">
             <div class="container">
                 <nav class="navbar">
-                    <img src="./assets/icon/logo.png" alt="" class="logo" />
+                    <img src="./assets/icon/logo2.png" alt="" class="logo" />
                     <ul class="navbar__list">
                         <li class="navbar__item">
                             <a
@@ -130,7 +130,7 @@
                     <div class="hero__inner">
                         <section class="hero__content">
                             <p class="section-title">Digital Smart Wallet</p>
-                            <h1 data-aos="fade-down-right" class="hero__heading">
+                            <h1 data-aos="fade-down-right" data-aos-duration="3000" class="hero__heading">
                                 Digital
                                 <strong class="hero__heading--strong"
                                     >Payment</strong
@@ -149,11 +149,18 @@
                                     id=""
                                     class="email_form-input"
                                     placeholder="Your email address"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                                            required
+                                            minlength="6"
                                 />
                                 <button class="btn email_form-btn">
                                     Get Started
                                 </button>
                             </form>
+                            <p class="form-err">Please enter a valid email format
+
+                            </p>
+
                             <p class="email_form-desc">
                                 *We’ll respect the inbox and never share your
                                 email.
@@ -166,7 +173,7 @@
                                 alt=""
                             />
                             <!-- decor 1 -->
-                            <div data-aos="fade-down-right" class="hero__image-decor1">
+                            <div data-aos="fade-down-right" data-aos-duration="3000" class="hero__image-decor1">
                                 <svg
                                     class="hero__image-decor1-icon"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +207,7 @@
                                 </p>
                             </div>
                             <!-- decor 2 -->
-                            <div data-aos="zoom-in-left" class="hero__image-decor2">
+                            <div data-aos="zoom-in-left" data-aos-duration="3000" class="hero__image-decor2">
                                 <svg
                                     width="20"
                                     height="26"
@@ -229,7 +236,7 @@
                                 </div>
                             </div>
                             <!-- decor 3 -->
-                            <svg data-aos="zoom-in-left"
+                            <svg data-aos="zoom-in-left" data-aos-duration="3000"
                                 class="hero__decor-3"
                                 width="130"
                                 height="130"
@@ -879,17 +886,24 @@
                                 </a>
                                 <h3  class="footer__heading">News letter</h3>
                                 <!-- form footer -->
-                                <form action="" class="footer_email_form">
+                                <form action="" class=" footer_email_form">
                                     <input
                                         type="email"
                                         name=""
                                         id=""
-                                        class="footer_email_form-input"
+                                        class=" footer_email_form-input"
                                         placeholder="Email address..."
+                                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                            required
+                                            minlength="6"
                                     />
-                                    <button class="btn footer_email_form-btn">
+                                    <button class="btn email_form-btn footer_email_form-btn">
                                         Subscribe                                    </button>
                                 </form>
+                                <p class="form-err">Please enter a valid email format
+
+                                </p>
+
                             </div>
                     </div>
                     <div class="footer_mid">
