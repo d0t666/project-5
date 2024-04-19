@@ -89,6 +89,8 @@
         />
         <!-- style css -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- annimation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <!-- Header -->
@@ -128,7 +130,7 @@
                     <div class="hero__inner">
                         <section class="hero__content">
                             <p class="section-title">Digital Smart Wallet</p>
-                            <h1 class="hero__heading">
+                            <h1 data-aos="fade-down-right" class="hero__heading">
                                 Digital
                                 <strong class="hero__heading--strong"
                                     >Payment</strong
@@ -164,7 +166,7 @@
                                 alt=""
                             />
                             <!-- decor 1 -->
-                            <div class="hero__image-decor1">
+                            <div data-aos="fade-down-right" class="hero__image-decor1">
                                 <svg
                                     class="hero__image-decor1-icon"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +200,7 @@
                                 </p>
                             </div>
                             <!-- decor 2 -->
-                            <div class="hero__image-decor2">
+                            <div data-aos="zoom-in-left" class="hero__image-decor2">
                                 <svg
                                     width="20"
                                     height="26"
@@ -227,7 +229,7 @@
                                 </div>
                             </div>
                             <!-- decor 3 -->
-                            <svg
+                            <svg data-aos="zoom-in-left"
                                 class="hero__decor-3"
                                 width="130"
                                 height="130"
@@ -253,14 +255,17 @@
             <section class="work">
                 <div class="container">
                     <div class="work__inner">
-                        <figure class="work__media">
+                        <figure  class="work__media" data-aos="fade-up"
+                        data-aos-duration="3000">
                             <img
+                            data-aos="fade-up-right"
                                 class="work__media-img"
                                 src="./assets/img/how-itwork_01.png"
                                 alt=""
                             />
                             <!-- icon -->
                             <svg
+                            data-aos="fade-up-right"
                                 class="work__media-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="64"
@@ -384,9 +389,10 @@
                                 src="./assets/img/feature_card_01.png"
                                 alt=""
                                 class="feature-media__image"
+                                data-aos="fade-left"
                             />
                             <!-- send money -->
-                            <div class="send-money">
+                            <div data-aos="fade-up-right" class="send-money">
                                 <a class="send-money__icon">
                                     <img
                                         class="send-money__img"
@@ -406,7 +412,7 @@
                                 </div>
                             </div>
                             <!-- income -->
-                            <div class="income">
+                            <div data-aos="fade-up-right" class="income">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="30"
@@ -442,6 +448,7 @@
                     <div class="feature_inner feature_inner2">
                         <figure class="feature-media-2">
                             <img
+                            data-aos="flip-right"
                                 src="./assets/img/feature__02.png"
                                 alt=""
                                 class="feature-media__image2"
@@ -507,7 +514,7 @@
                                 </defs>
                             </svg>
                             <!-- choose payment-->
-                            <div class="choose-payment">
+                            <div data-aos="zoom-in-up" class="choose-payment">
                                 <p class="choose-payment__title">
                                     Choose payment method:
                                 </p>
@@ -870,7 +877,7 @@
                                         45565
                                     </li>
                                 </a>
-                                <h3 class="footer__heading">News letter</h3>
+                                <h3  class="footer__heading">News letter</h3>
                                 <!-- form footer -->
                                 <form action="" class="footer_email_form">
                                     <input
@@ -895,5 +902,9 @@
                 <p class="copyright">© 2020 Ligft Media All rights reserved.</p>
             </section>
         </main>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({anchorPlacement: 'top-bottom',debounceDelay: 50,once: false,});
+        </script>
     </body>
 </html>
