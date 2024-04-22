@@ -155,6 +155,7 @@ button {
 }
 .form-err {
     visibility: hidden;
+    margin-top: 20px;
 }
 .footer_email_form:has(:invalid:not(:placeholder-shown)) + .form-err,
 .email_form:has(:invalid:not(:placeholder-shown)) + .form-err {
