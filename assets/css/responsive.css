@@ -1,0 +1,26 @@
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (max-width: 1399.98px) {
+    /* CSS rules for extra extra large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1199.98px) {
+    /* CSS rules for extra large devices */
+    /* review */
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) {
+    /* CSS rules for large devices */
+    /* Header */
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (max-width: 767.98px) {
+    /* CSS rules for medium devices */
+}
+
+/* Small devices (phones, 0px and up) */
+@media (max-width: 575.98px) {
+    /* CSS rules for small devices */
+    /* hero */
+}
