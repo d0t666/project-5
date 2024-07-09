@@ -12,15 +12,117 @@
 @media (max-width: 991.98px) {
     /* CSS rules for large devices */
     /* Header */
+    .hero__image {
+        margin-left: 37px;
+    }
 }
 
 /* Medium devices (tablets, 576px and up) */
 @media (max-width: 767.98px) {
     /* CSS rules for medium devices */
+    /* Hero */
+
+    .hero__decor-3 {
+        right: 80px;
+    }
+    /* Navbar */
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logo,
+    .header__cta {
+        margin-left: initial;
+    }
+    /* Work */
+    .work__media-card {
+        right: 0;
+    }
+    /* Feature 2 */
+    .feature-media__image2 {
+        height: 40vh;
+    }
+    /* Testimonial */
+    .testimonial-list {
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+    .arrows_control {
+        left: initial;
+    }
+    /* Bloglist */
+    .blog-list {
+        grid-template-columns: auto;
+    }
 }
 
 /* Small devices (phones, 0px and up) */
 @media (max-width: 575.98px) {
     /* CSS rules for small devices */
+    .section-heading {
+        font-size: 4rem;
+    }
     /* hero */
+    .hero__image-decor1 {
+        left: 0;
+    }
+    .hero__image {
+        margin-left: initial;
+    }
+    .hero__heading {
+        font-size: 4.5rem;
+    }
+    /* howit work */
+    .work__media-img {
+        width: 100%;
+    }
+    .work__media::before {
+        content: none;
+    }
+    /* Featuree 2 */
+    .feature_content {
+        width: 100%;
+    }
+    .feature-media {
+        margin-top: 70px;
+    }
+    .features2-icon {
+        top: 7%;
+        right: 59px;
+    }
+    .feature-media-2:after {
+        content: none;
+    }
+    .choose-payment {
+        right: 65px;
+        bottom: -8px;
+    }
+
+    /* Blog */
+    .blog__top-content {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 12px;
+    }
+    /* Download */
+    .download-btn--control {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .download__inner {
+        padding: 30px;
+    }
+    .download_heading {
+        font-size: 3rem;
+    }
+    /* Footer */
+    .footer_email_form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer_mid {
+        margin-top: 30px;
+        flex-direction: column;
+    }
 }
